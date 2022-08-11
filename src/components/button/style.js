@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Button = styled.button`
+export const ButtonStyle = styled.button`
 	font-family: "Ultra";
 	font-size: 1rem;
 	letter-spacing: 0.05em;
@@ -28,7 +28,7 @@ export const ButtonContainer = styled.div`
 		position: absolute;
 		bottom: 4px;
 		left: 3px;
-		transition: ease-in-out 100ms;
+		transition: ease-in-out 150ms;
 
 		&:hover {
 			left: 1px;

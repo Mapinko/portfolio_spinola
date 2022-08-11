@@ -1,18 +1,11 @@
 import { Container } from "../../style/globalStyle";
-import { Button, ButtonContainer } from "../button/style";
-import { Nav } from "./style";
+
+import Nav from "../nav";
 
 const Header = () => {
 	return (
 		<Container>
-			<Nav>
-				<ButtonContainer>
-					<Button>about me</Button>
-				</ButtonContainer>
-				<ButtonContainer>
-					<Button>projects</Button>
-				</ButtonContainer>
-			</Nav>
+			<Nav />
 		</Container>
 	);
 };

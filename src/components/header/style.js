@@ -6,12 +6,12 @@ export const HeaderStyle = styled.header`
 
 	position: relative;
 	h1 {
-		font-size: 5rem;
+		font-size: 4rem;
 		line-height: 120.6%;
 	}
 
 	span {
-		width: 190px;
+		width: 50%;
 
 		position: absolute;
 		right: 0;

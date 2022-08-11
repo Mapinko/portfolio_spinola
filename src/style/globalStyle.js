@@ -3,25 +3,33 @@ export const GlobalStyle = createGlobalStyle`
 	:root{
 		--black: #0d0d0d;
 		--yellow: #ECCE32;
+		--lightpink: #E9C9F2;
 	}
 
 	* {
+		
 		box-sizing: border-box;
 		margin:0;
 		padding:0;
 	}
 	body{
-          width: 100vw;
-          height: 100vh;
-          background: linear-gradient(180deg, #56ABBF 0%, #A198D9 23.6%, #E9C9F2 48.25%, #A2ABD4 75.32%, #EBEBED 100%);
-	}
+		overflow-x: hidden;
+          width: 100%;
+          height: 100%;
+
+		background: rgb(86,172,191);
+		background: -moz-linear-gradient(180deg, rgba(86,172,191,1) 0%, rgba(179,148,224,1) 35%, rgba(233,201,242,1) 56%, rgba(162,171,212,1) 82%, rgba(238,238,238,1) 100%);
+		background: -webkit-linear-gradient(180deg, rgba(86,172,191,1) 0%, rgba(179,148,224,1) 35%, rgba(233,201,242,1) 56%, rgba(162,171,212,1) 82%, rgba(238,238,238,1) 100%);
+		background: linear-gradient(180deg, rgba(86,172,191,1) 0%, rgba(179,148,224,1) 35%, rgba(233,201,242,1) 56%, rgba(162,171,212,1) 82%, rgba(238,238,238,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#56acbf",endColorstr="#eeeeee",GradientType=1);
+}
 	h1{
 		font-family: "Ultra";
 	}
 	h2 {
 		font-family: "Pacifico", cursive;
 	}
-	p{
+	li, p{
 		font-family: 'Baloo 2', cursive;
 	}
 	button{
@@ -43,5 +51,10 @@ export const Container = styled.div`
 	max-width: 1360px;
 	width: 100%;
 
-	padding: 2rem;
+	margin: ${(props) => props.margin};
+	padding: 1em 2rem;
+`;
+
+export const LeftContainer = styled.div`
+	width: 50%;
 `;

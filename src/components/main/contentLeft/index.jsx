@@ -49,8 +49,8 @@ const ContentLeft = () => {
 				<TextElements>
 					When I started working as a designer I always felt like I
 					could do more. I kept imagining how incredible it would be
-					to be able to
-					<b>make applications that go beyond the visual stimulus</b>
+					to be able tos
+					<b> make applications that go beyond the visual stimulus</b>
 					and people could actually interact with them.
 				</TextElements>
 				<TextElements>

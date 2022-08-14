@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
 export const MainContainer = styled.main`
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
+	width: 100%;
+	.flex-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
 `;

@@ -1,14 +1,20 @@
-import { Container, LeftContainer } from "../../style/globalStyle";
+import { Container, SideContainer } from "../../style/globalStyle";
 import ContentLeft from "./contentLeft";
+import ContentRight from "./contentRight";
 import { MainContainer } from "./style";
 
 const Main = () => {
 	return (
 		<MainContainer>
 			<Container>
-				<LeftContainer>
-					<ContentLeft />
-				</LeftContainer>
+				<div className="flex-container">
+					<SideContainer>
+						<ContentLeft />
+					</SideContainer>
+					<SideContainer>
+						<ContentRight />
+					</SideContainer>
+				</div>
 			</Container>
 		</MainContainer>
 	);

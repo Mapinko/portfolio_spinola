@@ -22,6 +22,7 @@ export const SocialWapper = styled.div`
 		a,
 		p,
 		img {
+			color: var(--black);
 			margin: 0 auto;
 
 			font-weight: 400;

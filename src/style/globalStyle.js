@@ -55,6 +55,6 @@ export const Container = styled.div`
 	padding: 1em 2rem;
 `;
 
-export const LeftContainer = styled.div`
+export const SideContainer = styled.div`
 	width: 50%;
 `;

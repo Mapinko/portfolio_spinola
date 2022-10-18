@@ -30,6 +30,7 @@ export const GlobalStyle = createGlobalStyle`
 	.title-section{
 		text-align: center;
 		font-size: 2.3rem;
+		line-height: 50px;
 	}
 
 	.title-section::before{
@@ -67,6 +68,13 @@ export const Container = styled.div`
 
 	margin: ${(props) => props.margin};
 	padding: 1em 2rem;
+
+	.flex-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		gap: 3rem;
+	}
 `;
 
 export const SideContainer = styled.div`

@@ -4,7 +4,7 @@ import ContentRight from "./contentRight";
 
 const Main = () => {
 	return (
-			<Container>
+			<Container >
 				<div className="flex-container">
 					<SideContainer>
 						<ContentLeft />

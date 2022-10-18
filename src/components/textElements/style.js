@@ -4,11 +4,16 @@ export const ListContainer = styled.div`
 	width: 100%;
 	display: inline-flex;
 	gap: 15px;
-
-	span {
+	
+	.mark {
 		display: flex;
 		max-width: 5%;
 	}
+
+	.identation-span{
+		display: flex;
+		width: 50%;
+	}	
 `;
 
 export const List = styled.ul`

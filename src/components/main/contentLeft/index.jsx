@@ -24,8 +24,7 @@ const ContentLeft = () => {
 		{
 			img: email,
 			name: "Email",
-			// link: "https://is.gd/wQJN9T",
-			link: "mapincosf@gmail.com",
+			link: "mailto: mapincosf@gmail.com",
 		},
 		{
 			img: instagram,
@@ -72,10 +71,10 @@ const ContentLeft = () => {
 				<SocialWapper>
 					{social.map((pick, index) => (
 						<div className="links">
-							<a href={pick.link} target="_blank">
+							<a href={pick.link} target="_blank" rel="noreferrer" key={`${pick.name + index}`}>
 								<img src={pick.img} alt={pick.name} />
 							</a>
-							<a href={pick.link} target="_blank">
+							<a href={pick.link} target="_blank" rel="noreferrer" key={pick.name}>
 								<p>{pick.name}</p>
 							</a>
 						</div>

@@ -1,7 +1,7 @@
 import { ButtonStyle } from "./style";
 
-const Button = ({ children }) => {
-	return <ButtonStyle>{children}</ButtonStyle>;
+const Button = ({ children, width, click}) => {
+	return <ButtonStyle width={width} onClick={click}>{children}</ButtonStyle>;
 };
 
 export default Button;

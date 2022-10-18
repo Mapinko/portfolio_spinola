@@ -9,7 +9,7 @@ const Nav = () => {
 		<Container margin="0 auto">
 			<Navegation>
 				<ButtonContainer>
-					<Button>about me</Button>
+					<Button >about me</Button>
 				</ButtonContainer>
 				<ButtonContainer>
 					<Button>projects</Button>

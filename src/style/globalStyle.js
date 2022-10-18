@@ -14,8 +14,8 @@ export const GlobalStyle = createGlobalStyle`
 	}
 	body{
 		overflow-x: hidden;
-          width: 100%;
-          height: 100%;
+        width: 100%;
+        height: 100%;
 
 		background: rgb(86,172,191);
 		background: -moz-linear-gradient(180deg, rgba(86,172,191,1) 0%, rgba(179,148,224,1) 35%, rgba(233,201,242,1) 56%, rgba(162,171,212,1) 82%, rgba(238,238,238,1) 100%);
@@ -23,9 +23,23 @@ export const GlobalStyle = createGlobalStyle`
 		background: linear-gradient(180deg, rgba(86,172,191,1) 0%, rgba(179,148,224,1) 35%, rgba(233,201,242,1) 56%, rgba(162,171,212,1) 82%, rgba(238,238,238,1) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#56acbf",endColorstr="#eeeeee",GradientType=1);
 }
-	h1{
+	h1, .title-section, h3{
 		font-family: "Ultra";
 	}
+	
+	.title-section{
+		text-align: center;
+		font-size: 2.3rem;
+	}
+
+	.title-section::before{
+		content: "<";
+	}
+	
+	.title-section::after{
+		content: "/>";
+	}
+
 	h2 {
 		font-family: "Pacifico", cursive;
 	}

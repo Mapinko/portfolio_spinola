@@ -5,12 +5,14 @@ export const ButtonStyle = styled.button`
 	font-size: 1rem;
 	letter-spacing: 0.05em;
 
-	width: 233px;
+	/* width: 233px; */
+	width: ${(props) => props.width || 233}px;
 	height: 40px;
 `;
 
 export const ButtonContainer = styled.div`
-	width: 238px;
+	width: ${(props) => props.width || 238}px;
+
 	height: 44px;
 
 	border: 3px solid #000000;

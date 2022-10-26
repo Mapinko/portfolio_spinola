@@ -69,6 +69,7 @@ export const Container = styled.div`
 	margin: ${(props) => props.margin};
 	padding: 1em 2rem;
 
+	
 	.flex-container {
 		display: flex;
 		justify-content: space-between;
@@ -79,4 +80,10 @@ export const Container = styled.div`
 
 export const SideContainer = styled.div`
 	width: 50%;
+
+	@media(max-width: 920px) {
+		& {
+			width: 100%;
+		}
+	}
 `;

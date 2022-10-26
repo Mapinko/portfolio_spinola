@@ -15,5 +15,18 @@ export const ImageContainer = styled.div`
 		position: absolute;
 		right: 0px;
 		bottom: -70px;
+		width: 80%;
+		
 	}
+
+	@media(max-width: 920px) {
+		&{
+			position: none;
+			top: 0;
+			max-width: 0;
+		}
+		.profile, .ticket {
+				display: none;
+		}
+	
 `;

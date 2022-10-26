@@ -5,6 +5,8 @@ export const Wrapper = styled.section`
 	flex-direction: column;
 	gap: 15px;
 	padding-bottom: 1rem;
+
+	
 `;
 
 export const SocialWapper = styled.div`

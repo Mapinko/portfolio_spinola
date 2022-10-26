@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle, css } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
 	:root{
 		--black: #0d0d0d;
@@ -30,7 +30,10 @@ export const GlobalStyle = createGlobalStyle`
 	.title-section{
 		text-align: center;
 		font-size: 5vh;
-		line-height: 50px;
+
+		@media(max-width: 425px){
+		font-size: 3.5vh;
+		}
 	}
 
 	.title-section::before{
@@ -91,6 +94,11 @@ export const Container = styled.div`
 export const SideContainer = styled.div`
 	max-width: 50%;
 	width: 100%;
+    ${(props) => props.Flex && css`
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	`}
 
 	@media(max-width: 920px) {
 		& {

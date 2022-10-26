@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
 import Button from '../button';
-import TextElements from '../textElements';
 import Topics from '../topics';
 
 import AllTechList from './techsList/allTechs';
@@ -103,13 +102,13 @@ const MainTechs = () => {
 					</WrapperTechs>
 				</SideContainer>
 				
-				<SideContainer id="ABOUTME--SECTION" ResponsiveWidth={"100%"}>
+				<SideContainer id="ABOUTME--SECTION" ResponsiveWidth={"100%"} Flex={true}>
 					<div>
-						<WrapperTechs>
+						<WrapperTechs Gap={"0"}>
 							<div className='title-wrap'>
 								<h2 className='title-section'> Education </h2>
 							</div>
-							<TextElements>
+							<ParagraphWrapper  FlexDirection={"column"}>
 								<span className='identation-span'>
 									<p>2022 - 2023</p>
 								</span>
@@ -125,7 +124,7 @@ const MainTechs = () => {
 								2.000 hours - <b>Full Stack Development</b>
 								</p>
 								</span>
-							</TextElements>
+							</ParagraphWrapper>
 						</WrapperTechs>
 					</div>
 					<div>
@@ -171,39 +170,38 @@ const MainTechs = () => {
 						</ParagraphWrapper>
 					</div>
 					<div>
-						<WrapperTechs >
+						<WrapperTechs Gap={"1rem"}>
 							<div className='title-wrap'>
 								<h2 className='title-section'> Languages </h2>
 							</div>
 
-							<div className='row-direction'>
-								<TextElements>
+							<div id='wrapper-languages'>
+								<ParagraphWrapper FlexDirection={"column"}>
 									<span className='identation-span'>
-										English
+										<p>English</p>
 									</span>
 									<span className='identation-span'>
-										<b>Advanced</b>
+										<p><b>Advanced</b></p>
 									</span>
-								</TextElements>
+								</ParagraphWrapper>
 
-								<TextElements>
+								<ParagraphWrapper  FlexDirection={"column"}>
 									<span className='identation-span'>
-										Spanish
+										<p>Spanish</p>
 									</span>
 									<span className='identation-span'>
-										<b>Advanced</b>
+										<p><b>Advanced</b></p>
 									</span>
-								</TextElements>
+								</ParagraphWrapper>
 
-								<TextElements>
-									
+								<ParagraphWrapper  FlexDirection={"column"}>
 										<span className='identation-span'>
-											Portuguese
+											<p>Portuguese</p>
 										</span>
 										<span className='identation-span'>
-											<b>Native</b>
+											<p><b>Native</b></p>
 										</span>
-								</TextElements>
+								</ParagraphWrapper>
 							</div>
 						</WrapperTechs>
 					</div>

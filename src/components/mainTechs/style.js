@@ -11,12 +11,20 @@ export const WrapperTechs = styled.section`
     justify-content: center;
     align-items: flex-start;
     flex-direction: ${(props) => props.direction ? props.direction : "column"};
-    gap: 3rem;
+    gap:  ${(props) => props.Gap ? props.Gap : "3rem"};
 
-    .row-direction{
+    #wrapper-languages{
         display: flex;
-        gap: 4rem;
-        width: 100%;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+
+        width: 90%;
+        margin: 0 auto;
+        @media (max-width: 425px){
+            flex-direction: column;
+            gap: 1rem;
+        }
     }
 `
 
@@ -51,7 +59,7 @@ export const ParagraphWrapper = styled.div`
     display: flex;
     align-items: center;
     width: 100%;
-
+    flex-direction: ${(props) => props.FlexDirection};
     @media(max-width: 920px) {
         & {
             text-align: center
@@ -72,5 +80,12 @@ export const ParagraphWrapper = styled.div`
     .text-wrapper{
         margin: 1rem 0;
     }
+
+    .identation-span{
+		display: block;
+		@media(max-width: 920px) {
+			text-align: center;
+		}
+	}
 `
 

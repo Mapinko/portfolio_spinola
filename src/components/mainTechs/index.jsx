@@ -51,7 +51,7 @@ const MainTechs = () => {
 	}
 	
 	return (
-		<Container margin={"0 auto"}>
+		<Container margin={"0 auto"} id="ABOUTME--SECTION">
 			<div className="flex-container">
 				<SideContainer>
 					<WrapperTechs>

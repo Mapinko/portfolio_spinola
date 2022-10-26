@@ -9,10 +9,15 @@ const Nav = () => {
 		<Container margin="0 auto">
 			<Navegation>
 				<ButtonContainer>
-					<Button >about me</Button>
+				<a href='#ABOUTME--SECTION'>
+					<Button>about me</Button>
+				</a>
 				</ButtonContainer>
 				<ButtonContainer>
+				<a href='#PROJECTS--SECTION'>
 					<Button>projects</Button>
+				</a>
+
 				</ButtonContainer>
 			</Navegation>
 		</Container>

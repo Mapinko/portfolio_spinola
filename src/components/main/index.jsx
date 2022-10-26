@@ -9,7 +9,7 @@ const Main = () => {
 					<SideContainer>
 						<ContentLeft />
 					</SideContainer>
-					<SideContainer>
+					<SideContainer ResponsiveWidth={0}>
 						<ContentRight />
 					</SideContainer>
 				</div>

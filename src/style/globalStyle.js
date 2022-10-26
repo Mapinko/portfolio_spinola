@@ -69,21 +69,29 @@ export const Container = styled.div`
 	margin: ${(props) => props.margin};
 	padding: 1em 2rem;
 
-	
+
 	.flex-container {
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
 		gap: 3rem;
+
+		@media(max-width: 920px) {
+			& {
+				justify-content: center;
+				align-items: center;
+			}
+		}
 	}
 `;
 
 export const SideContainer = styled.div`
-	width: 50%;
+	max-width: 50%;
+	width: 100%;
 
 	@media(max-width: 920px) {
 		& {
-			width: 100%;
+			max-width: ${(props) => props.ResponsiveWidth};
 		}
 	}
 `;

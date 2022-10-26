@@ -5,9 +5,9 @@ import Nav from "../nav";
 
 const Header = () => {
 	return (
-		<>
+		<header>
 			<Nav />
-			<SideContainer>
+			<SideContainer ResponsiveWidth={"100%"}>
 				<Container>
 					<HeaderStyle>
 						<span></span>
@@ -15,7 +15,7 @@ const Header = () => {
 					</HeaderStyle>
 				</Container>
 			</SideContainer>
-		</>
+		</header>
 	);
 };
 

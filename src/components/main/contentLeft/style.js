@@ -6,7 +6,6 @@ export const Wrapper = styled.section`
 	gap: 15px;
 	padding-bottom: 1rem;
 
-	
 `;
 
 export const SocialWapper = styled.div`

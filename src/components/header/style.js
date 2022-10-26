@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HeaderStyle = styled.header`
+export const HeaderStyle = styled.div`
 	max-width: 500px;
 	width: 100%;
 
@@ -9,12 +9,13 @@ export const HeaderStyle = styled.header`
 	@media(max-width: 920px) {
 		& {
 			max-width: 100vw;
+			margin: 0 auto;
+
 		}
 	}
 
 	h1 {
-		font-size: 4rem;
-		line-height: 120.6%;
+		font-size: 15vh;
 
 		@media(max-width: 920px) {
 			& {
@@ -24,7 +25,7 @@ export const HeaderStyle = styled.header`
 	}
 
 	span {
-		width: 50%;
+		width: 40%;
 
 		position: absolute;
 		right: 0;

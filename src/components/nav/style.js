@@ -5,7 +5,7 @@ export const Navegation = styled.nav`
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	gap: 10%;
+	gap: 1rem;
 	
 	@media (max-width: 592px){
 		gap: 1rem

@@ -29,7 +29,7 @@ export const GlobalStyle = createGlobalStyle`
 	
 	.title-section{
 		text-align: center;
-		font-size: 2.3rem;
+		font-size: 5vh;
 		line-height: 50px;
 	}
 
@@ -78,7 +78,7 @@ export const Container = styled.div`
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
-
+		flex-wrap: wrap;
 		@media(max-width: 920px) {
 			& {
 				justify-content: center;

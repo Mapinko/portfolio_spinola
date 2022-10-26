@@ -1,21 +1,20 @@
 import styled from "styled-components";
 
 export const HeaderStyle = styled.div`
-	max-width: 500px;
-	width: 100%;
+	width: 65%;
+	word-wrap: break-word;
 
 	position: relative;
 	
 	@media(max-width: 920px) {
 		& {
-			max-width: 100vw;
+			width: 100%;
 			margin: 0 auto;
 		}
 	}
 
 	h1 {
-		font-size: 10vh;
-
+		font-size: 9.5vh;
 		@media(max-width: 920px) {
 			& {
 				text-align: center;
@@ -33,7 +32,7 @@ export const HeaderStyle = styled.div`
 
 		position: absolute;
 		right: 0;
-		top: 25%;
+		top: 40px;
 
 		border: 3px solid var(--black);
 		border-radius: 5px;

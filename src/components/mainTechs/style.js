@@ -4,6 +4,7 @@ export const WrapperTechs = styled.section`
     .title-wrap{
         width: 100%;
     }
+
     width: 100%;
 
     display: flex;
@@ -23,9 +24,10 @@ export const FilterWrapper = styled.div`
     width: 100%;
 
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    gap: 3rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
 `
 
 export const TechListWrapper = styled.div`
@@ -50,10 +52,21 @@ export const ParagraphWrapper = styled.div`
     align-items: center;
     width: 100%;
 
+    @media(max-width: 920px) {
+        & {
+            text-align: center
+        }
+    }
     .mark {
 		display: flex;
 		max-width: 5%;
         width: 100%;
+
+        @media(max-width: 920px) {
+            & {
+                display: none
+            }
+        }
 	}
 
     .text-wrapper{

@@ -5,9 +5,10 @@ export const ButtonStyle = styled.button`
 	font-size: 1rem;
 	letter-spacing: 0.05em;
 
-	/* width: 233px; */
 	width: ${(props) => props.width || 233}px;
 	height: 40px;
+
+	
 `;
 
 export const ButtonContainer = styled.div`
@@ -26,6 +27,14 @@ export const ButtonContainer = styled.div`
 		background-color: var(--black);
 		cursor: pointer;
 	}
+
+	&.ABOUTME--NAV{
+			@media(min-width: 920px){
+				&{
+					display: none;
+				}
+			}
+	}
 	button {
 		position: absolute;
 		bottom: 4px;
@@ -36,5 +45,8 @@ export const ButtonContainer = styled.div`
 			left: 1px;
 			bottom: 2px;
 		}
+
+
+		
 	}
 `;

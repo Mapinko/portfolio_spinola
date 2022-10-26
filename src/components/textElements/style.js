@@ -15,11 +15,10 @@ export const ListContainer = styled.div`
 	}
 
 	.identation-span{
-		display: flex;
-		width: 50%;
-
+		display: block;
+		width: 100%;
 		@media(max-width: 920px) {
-			display: none;
+			text-align: center;
 		}
 	}	
 `;

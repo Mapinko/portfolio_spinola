@@ -51,59 +51,59 @@ const MainTechs = () => {
 	}
 	
 	return (
-		<Container margin={"0 auto"} id="ABOUTME--SECTION">
-			<div className="flex-container">
-				<SideContainer>
+		<Container>
+			<div className="flex-container" id="TECHS--SECTION">
+				<SideContainer ResponsiveWidth={"100%"}>
 					<WrapperTechs>
-					<div className='title-wrap'>
-						<h2 className='title-section'> Technologies </h2>
-					</div>
+						<div className='title-wrap'>
+							<h2 className='title-section'> Technologies </h2>
+						</div>
 
-					<FilterWrapper>
-							<ButtonContainer width={190}>
-								<Button width={190} click={handleClickAll}>all</Button>
-							</ButtonContainer>
-							<ButtonContainer width={190}>
-								<Button click={handleClickFront} width={190}>front-end</Button>
-							</ButtonContainer>
-							<ButtonContainer width={190}>
-								<Button click={handleClickBack} width={190}>back-end</Button>
-							</ButtonContainer>
-					</FilterWrapper>
-						{
-							isAllActive && (
-								<TechListWrapper>
-								<div className="title-tech">
-									<Topics borderRadius={"30px"} width={"70"} showCircles={true} shadow={true}>All Techs</Topics>
-								</div>
-									<AllTechList/>
-								</TechListWrapper>
-							)
-						}
-						{
-							isFrontActive && (
-								<TechListWrapper>
+						<FilterWrapper>
+								<ButtonContainer width={190}>
+									<Button width={190} click={handleClickAll}>all</Button>
+								</ButtonContainer>
+								<ButtonContainer width={190}>
+									<Button click={handleClickFront} width={190}>front-end</Button>
+								</ButtonContainer>
+								<ButtonContainer width={190}>
+									<Button click={handleClickBack} width={190}>back-end</Button>
+								</ButtonContainer>
+						</FilterWrapper>
+							{
+								isAllActive && (
+									<TechListWrapper>
 									<div className="title-tech">
-										<Topics borderRadius={"30px"} width={"70"} showCircles={true} shadow={true}>Front-End</Topics>
+										<Topics borderRadius={"30px"} width={"95"}  shadow={true}>All Techs</Topics>
 									</div>
-									<FrontEndList />
-								</TechListWrapper>
+										<AllTechList/>
+									</TechListWrapper>
 								)
-						}
-						{
-							isBackActive && ( 
-								<TechListWrapper>
-								<div className="title-tech">
-									<Topics  borderRadius={"30px"} width={"70"} showCircles={true}  shadow={true}>Back-End</Topics>
-								</div>
-									<BackEndList />
-								</TechListWrapper>
-								)
-						}
+							}
+							{
+								isFrontActive && (
+									<TechListWrapper>
+										<div className="title-tech">
+											<Topics borderRadius={"30px"} width={"95"}  shadow={true}>Front-End</Topics>
+										</div>
+										<FrontEndList />
+									</TechListWrapper>
+									)
+							}
+							{
+								isBackActive && ( 
+									<TechListWrapper>
+									<div className="title-tech">
+										<Topics  borderRadius={"30px"} width={"95"}  shadow={true}>Back-End</Topics>
+									</div>
+										<BackEndList />
+									</TechListWrapper>
+									)
+							}
 					</WrapperTechs>
 				</SideContainer>
 				
-				<SideContainer>
+				<SideContainer id="ABOUTME--SECTION" ResponsiveWidth={"100%"}>
 					<div>
 						<WrapperTechs>
 							<div className='title-wrap'>
@@ -111,15 +111,19 @@ const MainTechs = () => {
 							</div>
 							<TextElements>
 								<span className='identation-span'>
-									2022 - 2023
+									<p>2022 - 2023</p>
 								</span>
 								<span className='identation-span'>
-									<b>
-									Kenzie Academy Brasil
-									</b>
+									<p>
+										<b>
+										Kenzie Academy Brasil
+										</b>
+									</p>
 								</span>
 								<span className='identation-span'>
+								<p>
 								2.000 hours - <b>Full Stack Development</b>
+								</p>
 								</span>
 							</TextElements>
 						</WrapperTechs>
@@ -161,10 +165,7 @@ const MainTechs = () => {
 							</span>
 							<div className='text-wrapper'>
 								<p>
-									I <b>lived 5 years</b> of my childhood in <b>Santiago Chile</b>. Until today I keep in touch with my old friends!
-								</p>
-								<p>
-								I adore that I have this opportunity because is a way that I can practice my spanish and <b>maintain a connection with another culture.</b>
+									I <b>lived 5 years</b> of my childhood in <b>Santiago Chile</b>. Until today I keep in touch with my old friends! I adore that I have this opportunity because is a way that I can practice my spanish and <b>maintain a connection with another culture.</b>
 								</p>
 							</div>
 						</ParagraphWrapper>

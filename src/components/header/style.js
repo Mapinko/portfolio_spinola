@@ -10,17 +10,21 @@ export const HeaderStyle = styled.div`
 		& {
 			max-width: 100vw;
 			margin: 0 auto;
-
 		}
 	}
 
 	h1 {
-		font-size: 15vh;
+		font-size: 10vh;
 
 		@media(max-width: 920px) {
 			& {
 				text-align: center;
 			}
+		}
+		@media(max-width: 920px) {
+			& {
+				font-size: 8vh
+			} 
 		}
 	}
 

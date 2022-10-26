@@ -34,7 +34,11 @@ export const HeaderStyle = styled.div`
 		border: 3px solid var(--black);
 		border-radius: 5px;
 		background-color: var(--black);
-
+		@media(max-width: 1024px) {
+			& {
+				width: 35%;
+			}
+		}
 		@media(max-width: 920px) {
 			& {
 				display: none;

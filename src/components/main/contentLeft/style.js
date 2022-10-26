@@ -4,8 +4,7 @@ export const Wrapper = styled.section`
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
-	padding-bottom: 1rem;
-
+	padding-bottom: 5vh;
 `;
 
 export const SocialWapper = styled.div`

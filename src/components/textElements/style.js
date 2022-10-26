@@ -8,11 +8,19 @@ export const ListContainer = styled.div`
 	.mark {
 		display: flex;
 		max-width: 5%;
+
+		@media(max-width: 920px) {
+			display: none;
+		}
 	}
 
 	.identation-span{
 		display: flex;
 		width: 50%;
+
+		@media(max-width: 920px) {
+			display: none;
+		}
 	}	
 `;
 

@@ -69,12 +69,15 @@ export const Container = styled.div`
 	margin: ${(props) => props.margin};
 	padding: 1em 2rem;
 
-
+	@media(max-width: 920px) {
+			& {
+				margin: 0 auto;
+			}
+		}
 	.flex-container {
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
-		gap: 3rem;
 
 		@media(max-width: 920px) {
 			& {
@@ -92,6 +95,8 @@ export const SideContainer = styled.div`
 	@media(max-width: 920px) {
 		& {
 			max-width: ${(props) => props.ResponsiveWidth};
+			text-align: ${(props) => props.Align};
+			margin: ${(props) => props.Margin};
 		}
 	}
 `;

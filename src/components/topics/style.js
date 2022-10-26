@@ -15,9 +15,15 @@ export const TopicsStyle = styled.div`
 	border-radius: ${(props) => props.borderRadius ? 
 	props.borderRadius : 
 	css`0 30px 30px 0`};
+
+	@media(max-width: 920px) {
+		border-radius: 30px
+	}
+
 	.topic_content {
 		padding-right: 2em;
 		width: 100%;
 		text-align: center;
 	}
+
 `;

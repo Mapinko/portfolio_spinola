@@ -5,11 +5,11 @@ import ContentRight from "./contentRight";
 const Main = () => {
 	return (
 			<Container >
-				<div className="flex-container">
-					<SideContainer>
+				<div className="flex-container" >
+					<SideContainer ResponsiveWidth={"100%"} Align={"center"} >
 						<ContentLeft />
 					</SideContainer>
-					<SideContainer ResponsiveWidth={0}>
+					<SideContainer ResponsiveWidth={"0"}>
 						<ContentRight />
 					</SideContainer>
 				</div>

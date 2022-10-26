@@ -29,10 +29,13 @@ export const GlobalStyle = createGlobalStyle`
 	
 	.title-section{
 		text-align: center;
-		font-size: 5vh;
+		font-size: 3vw;
 
+		@media(max-width: 920px){
+			font-size: 4vw;
+		}
 		@media(max-width: 425px){
-		font-size: 3.5vh;
+			font-size: 7vw;
 		}
 	}
 

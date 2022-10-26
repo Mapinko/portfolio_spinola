@@ -1,28 +1,21 @@
 import styled from "styled-components";
 
 export const HeaderStyle = styled.div`
-	width: 65%;
-	word-wrap: break-word;
+	width: 100%;
+	margin: 0 auto;
 
-	position: relative;
-	
-	@media(max-width: 920px) {
-		& {
-			width: 100%;
-			margin: 0 auto;
-		}
-	}
 
 	h1 {
-		font-size: 9.5vh;
+		font-size: 9vh;
+
 		@media(max-width: 920px) {
 			& {
 				text-align: center;
 			}
 		}
-		@media(max-width: 920px) {
+		@media(max-width: 425px) {
 			& {
-				font-size: 8vh
+				font-size: 6.5vh;
 			} 
 		}
 	}
@@ -39,7 +32,7 @@ export const HeaderStyle = styled.div`
 		background-color: var(--black);
 		@media(max-width: 1024px) {
 			& {
-				width: 35%;
+				/* width: %; */
 			}
 		}
 		@media(max-width: 920px) {

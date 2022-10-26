@@ -10,7 +10,6 @@ const Header = () => {
 			<SideContainer ResponsiveWidth={"100%"}>
 				<Container>
 					<HeaderStyle>
-						<span></span>
 						<h1>Mari Spinola</h1>
 					</HeaderStyle>
 				</Container>

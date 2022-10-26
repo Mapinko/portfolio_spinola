@@ -9,15 +9,18 @@ export const Wrapper = styled.section`
 
 export const SocialWapper = styled.div`
 	display: flex;
-	align-items: center;
+	flex-direction: ;
+	align-items: flex-end;
+	flex-wrap: wrap;
+	gap: 1rem;
 
 	.links {
+		padding: .2rem;
 		display: flex;
 		flex-direction: column;
 		gap: 5px;
 
 		margin: 0 auto;
-		width: 100%;
 
 		a,
 		p,
@@ -33,6 +36,9 @@ export const SocialWapper = styled.div`
 			&:hover > p:hover {
 				font-weight: 600;
 			}
+		}
+		img{
+			width: 100%;
 		}
 	}
 `;
